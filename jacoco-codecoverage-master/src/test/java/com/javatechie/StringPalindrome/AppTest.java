@@ -3,6 +3,10 @@ package com.javatechie.StringPalindrome;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+//JUNIT 5 (dependency added)
+//import static org.junit.jupiter.api.Assertions.assertEquals;
+//import org.junit.jupiter.api.Assertions;
+//import org.junit.jupiter.api.Test;
 
 /**
  * Unit test for simple App.
