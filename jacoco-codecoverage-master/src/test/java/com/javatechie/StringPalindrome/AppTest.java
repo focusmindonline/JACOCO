@@ -22,10 +22,17 @@ public class AppTest {
 	public void isNotPlaindromeTest() {
 		assertEquals(false, app.isPalindrome("abc"));
 	}
-
+       /* JUNIT 4*/
 	@Test(expected = IllegalArgumentException.class)
 	public void isNotPlaindromeExceptionTest() {
 		assertEquals(false, app.isPalindrome(null));
 	}
+	/* JUNIT 5*/
+	@Test
+        void IllegalArgumentExceptionTest() {
+	Assertions.assertThrows(IllegalArgumentException.class, () -> {
+		assertEquals(false, app.isPalindrome(null));
+	});
+}
 
 }
