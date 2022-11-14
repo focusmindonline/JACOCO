@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages {
+        stage('Welcome Jenkin File.!!!') {
+            steps { 
+                echo 'Welcome to Jenkins File..'
+               git credentialsId: '510dc320-d29d-45c5-bd38-901675d28c13', url: 'https://github.com/omprakashpandit/JACOCO.git'
+            }
+        }
+    }
+}
